@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.clientproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
+            <name>TemplateF7Vue</name>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1">
+            <library name="framework7" version="3.2.1">
+                <file localPath="public_html/js/libs/framework7/css/framework7.css" path="css/framework7.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.ios.css" path="css/framework7.ios.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.ios.min.css" path="css/framework7.ios.min.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.md.css" path="css/framework7.md.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.md.min.css" path="css/framework7.md.min.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.min.css" path="css/framework7.min.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.rtl.css" path="css/framework7.rtl.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.rtl.ios.css" path="css/framework7.rtl.ios.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.rtl.ios.min.css" path="css/framework7.rtl.ios.min.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.rtl.md.css" path="css/framework7.rtl.md.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.rtl.md.min.css" path="css/framework7.rtl.md.min.css"/>
+                <file localPath="public_html/js/libs/framework7/css/framework7.rtl.min.css" path="css/framework7.rtl.min.css"/>
+                <file localPath="public_html/js/libs/framework7/js/framework7.js" path="js/framework7.js"/>
+                <file localPath="public_html/js/libs/framework7/js/framework7.min.js" path="js/framework7.min.js"/>
+                <file localPath="public_html/js/libs/framework7/js/framework7.min.js.map" path="js/framework7.min.js.map"/>
+            </library>
+            <library name="vue" version="2.5.17">
+                <file localPath="public_html/js/libs/vue/vue.common.js" path="vue.common.js"/>
+                <file localPath="public_html/js/libs/vue/vue.esm.browser.js" path="vue.esm.browser.js"/>
+                <file localPath="public_html/js/libs/vue/vue.esm.js" path="vue.esm.js"/>
+                <file localPath="public_html/js/libs/vue/vue.js" path="vue.js"/>
+                <file localPath="public_html/js/libs/vue/vue.min.js" path="vue.min.js"/>
+                <file localPath="public_html/js/libs/vue/vue.runtime.common.js" path="vue.runtime.common.js"/>
+                <file localPath="public_html/js/libs/vue/vue.runtime.esm.js" path="vue.runtime.esm.js"/>
+                <file localPath="public_html/js/libs/vue/vue.runtime.js" path="vue.runtime.js"/>
+                <file localPath="public_html/js/libs/vue/vue.runtime.min.js" path="vue.runtime.min.js"/>
+            </library>
+        </libraries>
+    </configuration>
+</project>

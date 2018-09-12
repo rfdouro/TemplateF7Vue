@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#2196f3">
+  <!-- Your app title -->
+  <title>My App</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+  <!-- Path to Framework7 Library CSS -->
+  <link href="js/libs/framework7/css/framework7.css" rel="stylesheet" type="text/css"/>
+  <!-- Path to your custom app styles-->
+  <link href="css/icons.css" rel="stylesheet" type="text/css"/>
+  <link href="css/app.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+  <!-- App root element -->
+  <div id="app">
+   <!-- Statusbar overlay -->
+   <div class="statusbar"></div>
+
+   <!-- Left panel with cover effect-->
+   <div class="panel panel-left panel-cover theme-dark">
+    <div class="view">
+     <div class="page">
+      <div class="navbar">
+       <div class="navbar-inner">
+        <div class="title">Menu Swipe</div>
+       </div>
+      </div>
+      <div class="page-content">
+       <div class="list accordion-list">
+        <ul>
+         <li class="accordion-item"><a href="#" class="item-content item-link">
+           <div class="item-inner">
+            <div class="item-title">Cadastros</div>
+           </div></a>
+          <div class="accordion-item-content">
+           <div class="block">
+            <div class="list links-list">
+             <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </li>
+         <li class="accordion-item"><a href="#" class="item-content item-link">
+           <div class="item-inner">
+            <div class="item-title">Ações</div>
+           </div></a>
+          <div class="accordion-item-content">
+           <div class="block">
+            <div class="list links-list">
+             <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </li>
+         <li class="accordion-item"><a href="#" class="item-content item-link">
+           <div class="item-inner">
+            <div class="item-title">Ações</div>
+           </div></a>
+          <div class="accordion-item-content">
+           <div class="block">
+            <div class="list links-list">
+             <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </li>
+         <li class="accordion-item"><a href="#" class="item-content item-link">
+           <div class="item-inner">
+            <div class="item-title">Ações</div>
+           </div></a>
+          <div class="accordion-item-content">
+           <div class="block">
+            <div class="list links-list">
+             <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </li>
+         <li class="item-link">
+          <a href="/sobre/" class="item-content item-link" v-on:click.stop="closeMenu()">
+           <div class="item-media">
+            <i class="icon f7-icons ios-only">help</i>
+            <i class="icon material-icons md-only">help</i>
+           </div>
+           <div class="item-inner">
+            <div class="item-title">Sobre</div>
+           </div>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+   <!-- Your main view, should have "view-main" class -->
+   <div class="view view-main">
+    <!-- Initial Page, "data-name" contains page name -->
+    <div data-name="home" class="page">
+
+     <!-- Top Navbar -->
+     <div class="navbar">
+      <div class="navbar-inner">
+       <div class="title">Template App</div>
+      </div>
+     </div>
+
+     <!-- Toolbar -->
+     <div class="toolbar">
+      <div class="toolbar-inner">
+       <!-- Toolbar links -->
+       <a href="#" class="link icon-only panel-open" data-panel="left">
+        <i class="icon f7-icons ios-only">menu</i>
+        <i class="icon material-icons md-only">menu</i>
+       </a>
+       <a href="/sobre/" class="link">
+        <i class="icon f7-icons ios-only">help</i>
+        <i class="icon material-icons md-only">help</i>
+       </a>
+      </div>
+     </div>
+
+     <!-- Scrollable page content -->
+     <div class="page-content">
+      <h1>Conteúdo da página</h1>
+
+      <div class="list">
+       <ul>
+        <li class="item-content item-input">
+         <div class="item-media"><i class="icon material-icons md-only">calendar_today</i></div>
+         <div class="item-inner">
+          <div class="item-input-wrap bg-color-yellow">
+           <input type="text" id="calendar-input" v-model.lazy="data" />
+           <span class="input-clear-button"></span>
+          </div>
+         </div>
+        </li>
+       </ul>
+      </div>
+
+
+      <p>
+       <!-- <button> as button -->
+       <button class="button bg-color-blue text-color-white" onclick="appF7.methods.ola();">Usando F7</button>
+      </p>
+
+      <div class="list inline-labels no-hairlines-md">
+       <ul>
+        <li class="item-content item-input">
+         <div class="item-media">
+          <i class="icon demo-list-icon"></i>
+         </div>
+         <div class="item-inner">
+          <div class="item-title item-label">Nome</div>
+          <div class="item-input-wrap">
+           <input type="text" placeholder="Nome aqui" id="txNome" value="" v-model="nome">
+           <span class="input-clear-button"></span>
+          </div>
+         </div>
+        </li>
+
+        <li class="item-content item-input">
+         <div class="item-media">
+          <i class="icon demo-list-icon"></i>
+         </div>
+         <div class="item-inner">
+          <div class="item-title item-label">Nome</div>
+          <div class="item-input-wrap">
+           {{nome}}
+          </div>
+         </div>
+        </li>
+
+
+       </ul>
+      </div>
+
+      <button class="button color-red bg-color-yellow" v-on:click.stop="mostra()">Usando VUE</button>
+
+      <!-- Link to another page -->
+      <a href="/sobre/">Sobre</a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Path to Framework7 Library JS-->
+  <script src="js/libs/framework7/js/framework7.js" type="text/javascript"></script>
+  <!-- Path to VUE Library JS-->
+  <script src="js/libs/vue/vue.js" type="text/javascript"></script>
+  <!-- Path to your app js-->
+  <script src="js/appVue.js" type="text/javascript"></script>
+  <script src="js/appF7.js" type="text/javascript"></script>
+ </body>
+</html>
