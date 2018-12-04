@@ -82,8 +82,8 @@ made subject to such option by the copyright holder.
         <echo level="info" message="${cordova.command} -d create ${java.io.tmpdir}/nb_temp_project com.coolappz.${project.name} ${project.name}" />
         <delete dir="${java.io.tmpdir}/nb_temp_project"/>
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" failonerror="true" >
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="-d"/>
             <arg value="create"/>   
             <arg value="${java.io.tmpdir}/nb_temp_project"/>   
@@ -103,8 +103,8 @@ made subject to such option by the copyright holder.
     <target name="create-hello-world" depends="check-cordova-version">
         <echo level="info" message="${cordova.command} -d create www_nb_temp com.coolappz.${project.name} ${project.name}" />
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" failonerror="true">
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="-d"/>
             <arg value="create"/>   
             <arg value="www_nb_temp"/>   
@@ -148,8 +148,8 @@ made subject to such option by the copyright holder.
     <target name="create-android" depends="check-android-template,check-cordova-version,upgrade-to-cordova-project" unless="android.generated.exists">
         <echo level="info" message="${cordova.command} -d platform add android"/>
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" failonerror="true">
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="-d"/>
             <arg value="platform"/>   
             <arg value="add"/>   
@@ -160,8 +160,8 @@ made subject to such option by the copyright holder.
     <target name="create-ios" depends="check-ios-template,check-cordova-version,upgrade-to-cordova-project" unless="ios.generated.exists">
         <echo level="info" message="${cordova.command} -d platform add ios"/>
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" dir="." failonerror="true">
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="-d"/>
             <arg value="platform"/>   
             <arg value="add"/>   
@@ -239,8 +239,8 @@ made subject to such option by the copyright holder.
         <echo level="info" message="${cordova.command} prepare android"/>
 
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" failonerror="true">
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="prepare"/>
             <arg value="android"/>
         </exec>
@@ -250,8 +250,8 @@ made subject to such option by the copyright holder.
     <target name="update-ios">
         <echo level="info" message="${cordova.command} prepare ios"/>
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" failonerror="true">
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="prepare"/>
             <arg value="ios"/>
         </exec>
@@ -262,8 +262,8 @@ made subject to such option by the copyright holder.
     <target name="build-android" depends="create-android,update-plugins">
         <echo level="info" message="${cordova.command} -d build android"/>
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" failonerror="true">
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="-d"/>   
             <arg value="build"/>   
             <arg value="android"/>   
@@ -273,8 +273,8 @@ made subject to such option by the copyright holder.
     <target name="sim-android" depends="create-android,update-plugins">
         <echo level="info" message="${cordova.command} -d ${android.target.device.arg} android"/>
         <exec executable="${cordova.command}" resolveexecutable="true" searchpath="true" failonerror="true">
-            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:${jdk.home}/bin:${ant.home}/bin:${jdk.home}/bin"/>
-            <env key="JAVA_HOME" path="${jdk.home}"/>
+            <env key="${cordova.path.key}" path="${cordova.path.value}:${android.sdk.home}/tools:${android.sdk.home}/platform-tools:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin:${ant.home}/bin:E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64/bin"/>
+            <env key="JAVA_HOME" path="E:\DEVProgramas\Java\java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64"/>
             <arg value="-d"/>
             <arg value="${android.target.device.arg}"/>
             <arg value="android"/>   

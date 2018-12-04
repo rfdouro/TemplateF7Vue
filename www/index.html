@@ -10,13 +10,17 @@
   <!-- Your app title -->
   <title>My App</title>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
+  <!--link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"-->
 
   <!-- Path to Framework7 Library CSS -->
   <link href="js/libs/framework7/css/framework7.css" rel="stylesheet" type="text/css"/>
   <!-- Path to your custom app styles-->
-  <link href="css/icons.css" rel="stylesheet" type="text/css"/>
+  <!--link href="css/icons.css" rel="stylesheet" type="text/css"/-->
+  <!--link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"-->
+  <link href="css/Material_Icons.css"
+      rel="stylesheet">
   <link href="css/app.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
@@ -154,7 +158,9 @@
       <div class="list">
        <ul>
         <li class="item-content item-input">
-         <div class="item-media"><i class="icon material-icons md-only">calendar_today</i></div>
+         <div class="item-media">
+          <i class="icon material-icons md-only">calendar_today</i>
+         </div> 
          <div class="item-inner">
           <div class="item-input-wrap bg-color-yellow">
            <input type="text" id="calendar-input" v-model.lazy="data" />
